@@ -1,10 +1,10 @@
-:root {
+:root{
     --primary-color: rgb(112, 5, 5);
     --light-color: aliceblue;
     --dark-color: #333;
 }
 
-body {
+body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--light-color);
     color: var(--dark-color);
@@ -13,14 +13,35 @@ body {
     padding: 0;
 }
 
-header {
+header{
     display: flex;
     background-color: var(--primary-color);
     color: var(--light-color);
     padding: 1rem;
+    align-items: center;
 }
 
-nav ul {
+nav{
+    flex: 1;
+}
+
+nav ul{
     display: flex;
     list-style-type: none;
+}
+
+nav ul li{
+    flex: 1;
+}
+
+nav a{
+    color: var(--light-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover, :focus{
+    background-color: var(--primary-color);
+    background-color: var(--light-color);
 }
