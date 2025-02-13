@@ -13,7 +13,7 @@ body{
     padding: 0;
 }
 
-header{
+header, footer{
     display: flex;
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -68,4 +68,31 @@ h2+p::first-letter{
 
 .stars span{
     cursor: pointer;
+}
+
+/* attribute slector */
+a[href=#]{
+
+}
+
+a[href^='http']{
+    border-left: 4px solid var(--primary-color);
+    margin-left: 2rem;
+    padding-left: 1rem;
+}
+
+p::selection{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.google{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    display: block;
+    padding: 1rem;
+    margin: 20px 0;
+    width: calc(100% - 32px - 4px - 16px -16px);
+    /* width: calc(100% - 2rem - 4px - 1rem - 1rem);
+    width: calc(100% - 4rem - 4px); */
 }
