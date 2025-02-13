@@ -76,9 +76,9 @@ input::placeholder{
 }
 
 /* attribute slector */
-a[href=#]{
+/* a[href=#]{
 
-}
+} */
 
 a[href^='http']{
     border-left: 4px solid var(--primary-color);
