@@ -61,6 +61,11 @@ h2+p::first-letter{
     padding: 0.25rem;
 }
 
+/* placeholder */
+input::placeholder{
+    font-style: italic;
+}
+
 /* star rating using future sibling slector */
 .stars span:hover~span{
     opacity: 0.3;
