@@ -45,3 +45,27 @@ nav a:hover, :focus{
     background-color: var(--primary-color);
     background-color: var(--light-color);
 }
+
+/* adjacent sibling selector */
+h2+p{
+    border: 2px solid var(--dark-color);
+    padding: 1rem;
+    margin: 0 2rem;
+    border-radius: 1rem;
+}
+
+/* fisrt letter pseudo element */
+h2+p::first-letter{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.25rem;
+}
+
+/* star rating using future sibling slector */
+.stars span:hover~span{
+    opacity: 0.3;
+}
+
+.stars span{
+    cursor: pointer;
+}
